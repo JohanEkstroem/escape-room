@@ -1,0 +1,6 @@
+Begin with header:
+-Logo to left
+-Header, h1 [Esc] Hacker Escape Rooms
+-Four links (in hamburger menu button with smartphone mode, max-width:300px)
+	Play online		Play on-site	The story		Contact us
+Links are placed with flexbox justify-content:space-evenly
