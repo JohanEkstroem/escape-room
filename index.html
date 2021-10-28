@@ -6,64 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c1ac69bc48.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
     <header class="header">
-        <div class="logo-h1">
-            <div id="logo"></div>
-            <h1>[Esc]</h1>
+        <div class="logo-container">
+            <img id="logo" src="/img/logo.png" alt="ESC Logo">
         </div>
-        <div class="header-title">
+        <div class="h1-container">
             <h1>Hacker Escape Rooms</h1>
         </div>
-        <div class="hamburger">Hamburger</div>
-        <div class="link-container">
-            <a href="">Play online</a>
-            <a href="">Play on-site</a>
-            <a href="">The story</a>
-            <a href="">Contact us</a>
-        </div>
+        <nav class="link-container">
+            <a href="#" class="header-links">Play online</a>
+            <a href="#" class="header-links">Play on-site</a>
+            <a href="#" class="header-links">The story</a>
+            <a href="#" class="header-links">Contact us</a>
+        </nav>
     </header>
-    <!--Så gott som klar-->
-    <main>
-        <div class="image-container">
-            <img src="https://picsum.photos/1000/400" alt="">
+    <section class="image-container">
+        <img src="/img/big-image.png" alt="A man in front of a computer">
+    </section>
+    <section class="image-buttons">
+        <div class="image-button__online-container ">
+            <a href="# ">Online challenges</a>
         </div>
-        <div class="image-buttons">
-            <button class="image-buttons button-left">Online challenges</button>
-            <button class="image-buttons button-right">On-site challenges</button>
+        <div class="image-button__onsite-container ">
+            <a href="#">On-site challenges</a>
         </div>
-        <div class="quotes">
-            <div class="quotes-left">
-                <div class="icon-background">
-                    <i class="fas fa-user"></i>
-
-                </div>
-                <p><em>This is a quote about how amazing this place is and how much fun me and my friends had when we tried it</em><br>
-                    <br>-Quote Author</p>
+    </section>
+    <section class="quotes">
+        <div class="quotes-left">
+            <div class="quotes-left__icon">
+                <img src="/img/profile.png" alt="Profile picture of a man" class="profile">
             </div>
-            <div class="quotes-right">
-                <div class="icon-background">
-                    <i class="fas fa-user"></i>
-
-                </div>
-                <p><em>This is a quote about how amazing this place is and how much fun me and my friends had when we tried it</em>
-                    <br>-Quote Author</p>
+            <div class="bq-container">
+                <blockquote class="bq">This is a quote about how amazing this place is and how much fun me and my friends had when we tried it</blockquote>
+                <cite id="cite">John Doe, visited us in September 2021</cite>
             </div>
-
         </div>
-        <p class="text">Popular challenges right now</p>
+
+        <div class="quotes-right">
+            <div class="quotes-right__icon">
+                <img src="/img/profile.png" alt="Profile picture of a man" class="profile">
+            </div>
+            <div class="bq-container">
+                <blockquote class="bq">This is a quote about how amazing this place is and how much fun me and my friends had when we tried it</blockquote>
+                <cite id="cite">John Doe, visited us in September 2021</cite>
+            </div>
+        </div>
+    </section>
+    <section class="section-cards">
+        <p class="card-section__header">Popular challenges right now</p>
         <div class="card-outer">
-            <div class="card-left">
+            <div class="card-container">
                 <div class="card-upper">
-                    <div class="card-upper-icon-container">
-                        <i class="fas fa-laptop"></i>
-                    </div>
+                    <img src="/img/big-image.png" alt="">
+                </div>
+                <div class="card-lower">
                     <div class="star-container">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -71,8 +76,6 @@
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star"></span>
                     </div>
-                </div>
-                <div class="card-lower">
                     <h4 class="card-lower-text">Title of challenge</h4>
                     <h5 class="card-lower-text">2 participants (networked)</h5>
                     <p id="card-p">Oportet uti solum de actibus prosecutionern et fugarn, haec leniter et blandus et reservato.</p>
@@ -81,11 +84,11 @@
                     </div>
                 </div>
             </div>
-            <div class="card-middle">
+            <div class="card-container">
                 <div class="card-upper">
-                    <div class="card-upper-icon-container">
-                        <i class="fas fa-home"></i>
-                    </div>
+                    <img src="/img/big-image.png" alt="">
+                </div>
+                <div class="card-lower">
                     <div class="star-container">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -93,8 +96,6 @@
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star"></span>
                     </div>
-                </div>
-                <div class="card-lower">
                     <h4 class="card-lower-text">Title of room (on-site)</h4>
                     <h5 class="card-lower-text">2-6 participants</h5>
                     <p id="card-p">Oportet uti solum de actibus prosecutionern et fugarn, haec leniter et blandus et reservato.</p>
@@ -103,11 +104,11 @@
                     </div>
                 </div>
             </div>
-            <div class="card-right">
+            <div class="card-container">
                 <div class="card-upper">
-                    <div class="card-upper-icon-container">
-                        <i class="fas fa-home"></i>
-                    </div>
+                    <img src="/img/big-image.png" alt="">
+                </div>
+                <div class="card-lower">
                     <div class="star-container">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -115,8 +116,6 @@
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star"></span>
                     </div>
-                </div>
-                <div class="card-lower">
                     <h4 class="card-lower-text">Title of room (on-site)</h4>
                     <h5 class="card-lower-text">2-6 participants</h5>
                     <p id="card-button">Oportet uti solum de actibus prosecutionern et fugarn, haec leniter et blandus et reservato.</p>
@@ -127,35 +126,43 @@
                 </div>
             </div>
         </div>
-        <div class="buttons-allchallenges">
-            <button id="challengeButtonLeft">All online challenges</button>
-            <button id="challengeButtonRight">All on-site challenges</button>
+    </section>
+    <section class="image-buttons-2">
+        <div class="image-button__online-container-2">
+            <a href="# ">Online challenges</a>
         </div>
-        <p id="story">Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felictatis libertatisque perficiuntur</p>
-        <div class="story-button-container">
-            <button>Read the full story</button>
+        <div class="image-button__onsite-container-2">
+            <a href="#">On-site challenges</a>
         </div>
-        <div class="pic-salestext-container">
-            <div class="pic-salestext-top-left">
-                <img src="https://picsum.photos/400/300" alt="">
-            </div>
-            <div class="pic-salestext-top-right">
-                <h2>Play with your friends or build your team stronger at work</h2>
-                <p>Tanta petere igitur, ne sinires memini fieri etiam aliquam inclinationem ad consequendum minima. Instead, oportet omnino quieti de rebus dialecticis differam, ed ad cetera munera.</p>
-                <button>Book on-site today</button>
-            </div>
-            <div class="pic-salestext-bottom-left">
-                <h2>Play online or visit our venue for one of our 25 escape rooms</h2>
-                <p>Tanta petere igitur, ne sinires memini fieri etiam aliquam inclinationem ad consequendum minima. Instead, oportet omnino quieti de rebus dialecticis differam, et ad cetera mununera.</p>
-                <button>Play online</button>
-                <button>Book on-site</button>
-            </div>
-            <div class="pic-salestext-bottom-right">
-                <img src="https://picsum.photos/400" alt="">
-            </div>
+    </section>
+    <article class="article-container">
+        <div class="para-container">
+            <p id="story">Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec qioque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
+        </div>
+        <div class="article-link-container">
+            <a href="#">Read the full story</a>
+        </div>
+    </article>
+    <div class="pic-salestext-container">
+        <div class="pic-salestext-a" id="pic-salestext-a">
+            <img src="/img/pic-a.jpg" alt="A woman and a man watching a screen" id="pic-salestext-a">
+        </div>
+        <div class="pic-salestext" id="pic-salestext-b">
+            <h2>Play with your friends or build your team stronger at work</h2>
+            <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
+            <a href="#" id="salestext-link">Book on-site today</a>
+        </div>
+        <div class="pic-salestext-c-container" id="pic-salestext-c">
+            <img src="/img/pic-c.jpg" alt="A woman looking at a computer" id="pic-salestext-c">
+        </div>
+        <div class="pic-salestext" id="pic-salestext-d">
+            <h2>Play online or visit our venue for one of our 25 escape rooms</h2>
+            <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
+            <a href="#" id="salestext-link">See all challenges</a>
+
         </div>
 
-    </main>
+    </div>
     <footer>
         <div class="footer-text">
             <h3>[Esc] Hacker Escape Rooms</h3>
@@ -163,17 +170,27 @@
         </div>
         <div class="site-map">
             <h3>Site map</h3>
-            <a href="#">The Story</a><br>
-            <a href="#">Contact Us</a><br>
-            <a href="#">Legal</a><br>
-            <a href="#">Play online</a><br>
-            <a href="#">Play on-site</a>
+            <ul>
+                <li><a href="#">The Story</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Legal</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Play online</a></li>
+                <li><a href="#">Play on-site</a></li>
+            </ul>
         </div>
+
         <div class="follow-us">
             <h3>Follow us on</h3>
-            <a href="#">Facebook</a><br>
-            <a href="#">Instagram</a><br>
-            <a href="#">YouTube</a>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+
+
+
         </div>
     </footer>
 </body>
