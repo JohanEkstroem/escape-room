@@ -100,25 +100,33 @@
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         width: 343px;
+        font-style: italic;
+    }
+    #cite {
+        font-size: 24px;
+        font-style: normal;
     }
     .quotes-right {
         display: none;
     }
     .section-cards {
         margin-bottom: 47px;
+        overflow: scroll;
+        display: flex;
     }
     .card-section__header {
         text-align: center;
         margin-top: 105px;
+        margin-bottom: 44px;
         font-size: 32px;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
     }
     .card-outer {
         display: flex;
-        width: 219px;
-        height: 363px;
-        justify-content: center;
+    }
+    .card-container {
+        padding: 0 30px;
     }
     .card-left {
         border: 2px solid black;
@@ -303,9 +311,9 @@
     .quotes {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-top: 107px;
-        padding: 0 16px;
+        padding: 0 100px;
     }
     .quotes-right {
         display: flex;
@@ -329,9 +337,11 @@
         font-size: 24px;
         margin: 0;
         width: 407px;
+        font-style: italic;
     }
     #cite {
         font-size: 18px;
+        font-style: normal;
     }
     .card-section__header {
         text-align: center;
@@ -357,8 +367,38 @@
     .card-upper img {
         width: 100%;
     }
+    .card-lower h4 {
+        font-size: 28px;
+        margin: 12px 17px 0 17px;
+    }
+    .card-button-container {
+        display: flex;
+        justify-content: right;
+    }
+    .card-button-container a {
+        font-size: 16px;
+        font-weight: 700;
+        background-color: #E3170A;
+        color: #ffffff;
+        padding: 12px 35px;
+        border-radius: 4px;
+    }
+    .card-lower p {
+        font-size: 18px;
+        padding: 18px 12px;
+    }
     .checked {
         color: #E3170A;
+    }
+    .star-h5-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 12px;
+        align-items: flex-start;
+    }
+    .star-h5-container h5 {
+        margin: 0;
+        font-size: 14px;
     }
     .star-container {
         grid-column: 1;
