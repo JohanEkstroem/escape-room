@@ -374,7 +374,7 @@ body {
         font-size: 24px;
         font-weight: 700;
     }
-    #contact-us-link {
+    .header-links:hover {
         color: #8ACFE5;
     }
     /*-------------------Links below header and navbar start----------*/
