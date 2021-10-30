@@ -2,13 +2,20 @@
     box-sizing: border-box;
 }
 
+.fa-star-o {
+    color: #E3170A
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+}
+
 @media screen and (max-width:800px) {
     html {
-        font-size: 10px;
         width: 480px;
         margin: 0 auto;
         padding: 0;
-        font-family: 'Roboto', sans-serif;
     }
     body {
         margin: 0px;
@@ -36,11 +43,12 @@
         height: 84px;
         font-size: 24px;
         font-weight: 700;
+        margin: 26px 0 35px;
     }
     #logo {
         width: 128px;
         height: 82px;
-        margin: 0 13px;
+        margin: 26px 13px 35px 13px;
     }
     .link-container {
         display: none;
@@ -79,6 +87,7 @@
         font-size: 16px;
         font-weight: 700;
         color: #36769D;
+        text-decoration: underline;
     }
     /*----------------------Big-image Ends---------------------------*/
     /*-------------------Quote-section Starts------------------------*/
@@ -100,7 +109,7 @@
         border-radius: 50%;
     }
     .bq {
-        margin: 0;
+        margin: 0 0 10px 0;
         font-size: 24px;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
@@ -108,7 +117,7 @@
         font-style: italic;
     }
     #cite {
-        font-size: 24px;
+        font-size: 18px;
         font-style: normal;
     }
     .quotes-right {
@@ -136,22 +145,20 @@
     }
     .card-container {
         /*----Each individual card ------*/
-        border: 2px solid black;
         border-radius: 8px;
         margin: 0 25px;
+        background-color: #ffffff;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
+    }
+    .card-upper {
+        width: 363px;
     }
     .card-upper img {
         width: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
     }
-    .card-left {
-        border: 2px solid black;
-        border-radius: 8px;
-    }
-    .card-upper img {
-        width: 363px;
-        height: 219px;
-    }
-    .card-lower h4 {
+    .card-lower-text {
         font-size: 28px;
         margin: 12px 17px 0 17px;
     }
@@ -168,28 +175,25 @@
         border-radius: 4px;
     }
     .card-lower p {
+        /*---Text inside the card--*/
         font-size: 18px;
-        padding: 18px 12px;
+        padding: 18px 18px;
     }
     .checked {
         color: #E3170A;
     }
     .star-h5-container {
+        /*---Rating for the challenges---*/
         display: flex;
-        justify-content: space-between;
-        margin: 0 12px;
-        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 6px 12px;
     }
     .star-h5-container h5 {
-        margin: 0;
+        margin: 0 14px;
         font-size: 14px;
     }
     .star-container {
-        grid-column: 1;
-        grid-row: 2;
-        margin-left: .5rem;
-        color: white;
-        border-color: #E3170A;
+        padding: 0 10px;
     }
     .card-button-container {
         padding: 5px 18px 12px 0;
@@ -203,6 +207,39 @@
         border-radius: 4px;
     }
     /*------------------------------Card End---------------------------------*/
+    /*-----------------------Links which is placed on the big image----------*/
+    .image-buttons-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    .image-button__onsite-container-2 {
+        background-color: #8ACFE5;
+        padding: 15px;
+        border-radius: 4px;
+        width: 308px;
+        height: 66px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 37px;
+        margin-bottom: 30px;
+    }
+    .image-button__onsite-container-2 a {
+        text-decoration: none;
+        color: #011827;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .image-button__online-container-2 a {
+        font-size: 16px;
+        font-weight: 700;
+        color: #36769D;
+        text-decoration: underline;
+    }
+    /*-----------------------Links end here----------------------------*/
+    /*-----------------Article with read full story-link---------------*/
     .article-container {
         width: 100%;
         height: 500px;
@@ -232,6 +269,8 @@
         align-items: center;
         padding: 25px 56px;
     }
+    /*---------------------------Article ends here --------------------*/
+    /*---------------------------Picture with sales text----------------*/
     #pic-salestext-a {
         width: 480px;
         height: 300px;
@@ -247,7 +286,7 @@
     .pic-salestext p {
         font-size: 20px;
         font-weight: 400;
-        margin-bottom: 30px;
+        margin-bottom: 53px;
     }
     #salestext-link {
         font-size: 24px;
@@ -257,12 +296,13 @@
         background-color: #E3170A;
         padding: 15px;
         border-radius: 4px;
-        margin-bottom: 83px;
+        margin: 83px 0;
     }
     #pic-salestext-c {
         width: 480px;
         height: 300px;
     }
+    /*------------------------Sales text ends--------------------------------*/
     footer {
         margin-top: 98px;
         padding: 22px;
@@ -299,6 +339,7 @@
     a {
         text-decoration: none;
     }
+    /*----------------------Header section starts--------------------*/
     .header {
         display: flex;
         flex-direction: column;
@@ -336,6 +377,7 @@
     #contact-us-link {
         color: #8ACFE5;
     }
+    /*-------------------Links below header and navbar start----------*/
     .image-container img {
         width: 1280px;
         height: 468px;
@@ -374,6 +416,8 @@
         color: #011827;
         font-weight: 700;
     }
+    /*------------------------------Links below header and navbar-------*/
+    /*------------------------------Quotes Start-------------------------*/
     .quotes {
         display: flex;
         flex-direction: row;
@@ -409,29 +453,32 @@
         font-size: 18px;
         font-style: normal;
     }
+    /*-----------------------Quotes End------------------------*/
+    /*-----------------------Card-section Start----------------*/
     .card-section__header {
         text-align: center;
-        margin-top: 108px;
-        margin-bottom: 87px;
-        font-size: 36px;
+        margin-top: 105px;
+        margin-bottom: 44px;
+        font-size: 32px;
+        font-family: 'Roboto', sans-serif;
         font-weight: 400;
     }
     .card-outer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 53px;
     }
     .card-container {
-        border: 2px solid black;
+        /*----Each individual card ------*/
         border-radius: 8px;
-        width: 363px;
-        height: 446px;
-        /*drop shadow radius 10px rgba(0, 0, 0, 0.25)*/
-        filter: drop-shadow(0, 0, 0, 0.25);
+        margin: 0 25px;
+        background-color: #ffffff;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
     }
     .card-upper img {
         width: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
     }
     .card-lower h4 {
         font-size: 28px;
@@ -458,32 +505,43 @@
     }
     .star-h5-container {
         display: flex;
-        justify-content: space-between;
-        margin: 0 12px;
-        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 6px 17px;
     }
     .star-h5-container h5 {
-        margin: 0;
+        margin: 0 5px;
         font-size: 14px;
     }
-    .star-container {
-        grid-column: 1;
-        grid-row: 2;
-        margin-left: .5rem;
-        color: white;
-        border-color: #E3170A;
+    .section-cards {
+        margin-bottom: 47px;
+        display: flex;
     }
+    .card-left {
+        border: 2px solid black;
+        border-radius: 8px;
+    }
+    .card-button-container {
+        padding: 5px 18px 12px 0;
+    }
+    .card-button-container a {
+        font-size: 16px;
+        font-weight: 700;
+        padding: 12px 35px;
+        border-radius: 4px;
+    }
+    /*------------Cards-section Ends---------------------*/
+    /*------------Links below cards----------------------*/
     .image-buttons-2 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         font-size: 24px;
+        font-weight: 700;
         text-align: center;
         padding: 0 323px;
         margin-top: 87px;
     }
     .image-button__online-container-2 {
-        background-color: rgb(111, 102, 241);
         padding: 15px;
         border-radius: 5px;
         background-color: #E3170A;
@@ -496,7 +554,6 @@
         color: #FFFFFF;
     }
     .image-button__onsite-container-2 {
-        background-color: rgb(111, 102, 241);
         padding: 15px;
         border-radius: 5px;
         color: white;
@@ -505,6 +562,11 @@
         width: 308px;
         height: 66px;
     }
+    .image-button__onsite-container-2 a {
+        color: #011827;
+    }
+    /*----------------------------Card-section Ends-----------------------*/
+    /*----------------------------Article Starts--------------------------*/
     .article-container {
         display: flex;
         flex-direction: column;
@@ -538,7 +600,8 @@
         align-items: center;
         padding: 19px 55px;
     }
-    /* SALES TEXT */
+    /*---------------------------Article Ends------------------------------------*/
+    /*-------------------------- Sales Text--------------------------------------*/
     .pic-salestext-container {
         width: 100%;
         display: grid;
@@ -560,6 +623,7 @@
     }
     .pic-salestext p {
         font-size: 24px;
+        margin: 25px 0 50px;
     }
     .pic-salestext a {
         font-size: 24px;
@@ -581,6 +645,7 @@
         width: 100%;
         height: 460px;
     }
+    /*---------------------------------Sales text end--------------------*/
     footer {
         background-color: #011827;
         color: #FFFFFF;
