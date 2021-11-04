@@ -31,11 +31,12 @@
         }
         .popup-container {
             position: absolute;
-            top: 450px;
+            top: 48vh;
             left: 50%;
             transform: translate(-50%, -50%);
             height: 914px;
-            width: 440px;
+            width: 93%;
+            max-width: 440px;
             background-color: #011827;
             filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.4));
         }
