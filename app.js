@@ -2,17 +2,13 @@ console.log('app.js is loaded...');
 const closeBtn = document.getElementById('close');
 const menuBtn = document.getElementById('menuBtn');
 const popupContainer = document.getElementById('popup-container');
-const allBut_popupcontainer = document.querySelectorAll('html div:not(#popup-container)');
+const modalBackground = document.querySelector('.modal-background');
 
 
 menuBtn.addEventListener('click', () => {
-    popupContainer.classList.remove('hidden');
-    allBut_popupcontainer.style.opacity = .4;
-
-
+    modalBackground.classList.remove("hidden");
 })
 
 closeBtn.addEventListener('click', () => {
-    popupContainer.setAttribute("class", "popup-container hidden");
-
+    modalBackground.classList.add('hidden');
 })

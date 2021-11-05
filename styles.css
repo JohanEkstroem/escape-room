@@ -29,14 +29,21 @@
         a {
             text-decoration: none;
         }
+        .modal-background {
+            height: 961px;
+            width: 480px;
+            background: rgba(255, 255, 255, 0.5);
+            position: absolute;
+            /* z-index: -1;*/
+        }
         .popup-container {
             position: absolute;
             top: 460px;
             left: 50%;
             transform: translate(-50%, -50%);
             height: 914px;
-            width: 93%;
             max-width: 440px;
+            width: 90%;
             background-color: #011827;
             filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.4));
         }
