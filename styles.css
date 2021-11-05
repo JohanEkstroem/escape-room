@@ -34,7 +34,15 @@
             width: 480px;
             background: rgba(255, 255, 255, 0.5);
             position: absolute;
-            /* z-index: -1;*/
+            transition: popup-fadein 1000ms;
+        }
+        @keyframes popup-fadein {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
         .popup-container {
             position: absolute;
@@ -46,6 +54,8 @@
             width: 90%;
             background-color: #011827;
             filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.4));
+            transition: animation 1000ms;
+            animation: popup-fadein 1000ms;
         }
         #close {
             background-color: #011827;
