@@ -34,7 +34,7 @@
             width: 480px;
             background: rgba(255, 255, 255, 0.5);
             position: absolute;
-            transition: popup-fadein 1000ms;
+            animation: popup-fadein 300ms;
         }
         @keyframes popup-fadein {
             from {
@@ -54,7 +54,7 @@
             width: 90%;
             background-color: #011827;
             filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.4));
-            transition: popup-fadein animation popup-fadein 1000ms;
+            animation: popup-fadein 300ms;
         }
         #close {
             background-color: #011827;
