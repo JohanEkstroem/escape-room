@@ -35,6 +35,7 @@
             background: rgba(255, 255, 255, 0.5);
             position: absolute;
             animation: popup-fadein 300ms;
+            top: 0;
         }
         @keyframes popup-fadein {
             from {
@@ -434,16 +435,23 @@
             width: 128px;
             margin: 0 24px;
         }
-        .link-container {
-            display: flex;
-            justify-content: space-evenly;
+        .hidden {
+            display: block;
+        }
+        #close {
+            display: none;
         }
         .header-links {
-            color: #ffffff;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        .header-links a {
             font-size: 24px;
             font-weight: 700;
+            color: #ffffff;
         }
-        .header-links:hover {
+        .header-links a:hover {
             color: #8ACFE5;
         }
         /*-------------------Links below header and navbar start----------*/
